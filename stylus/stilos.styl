@@ -1,0 +1,128 @@
+@import "nib/vendor"
+
+vendor-perfixes = o ms moz webkit official
+
+@keyframes animImgPerfil
+	10%
+		transform:translateX(3px) rotate(2deg)
+	20%
+		transform:translateX(-3px) rotate(-2deg)
+	30%
+		transform:translateX(3px) rotate(2deg)
+	40%
+		transform:translateX(-3px) rotate(-2deg)
+	50%
+		transform:translateX(2px) rotate(1deg)
+	60%
+		transform:translateX(-2px) rotate(-1deg)
+	70%
+		transform:translateX(2px) rotate(1deg)
+	80%
+		transform:translateX(-2px) rotate(-1deg)
+	90%
+		transform:translateX(1px) rotate(0)
+	100%
+		transform:translateX(-1px) rotate(0)
+
+@keyframes amination
+	0%
+		transform rotate(0deg)
+	100%
+		transform rotate(360deg)
+
+body, html
+	margin 0
+	color white
+	font-family: 'Roboto',sans-serif;
+	font-size 20px
+	
+header
+	position absolute
+	z-index 2
+	margin-left 15%
+	margin-rinht 15%
+	margin-top 7%
+	width 70%
+	display inline-block
+	text-align center
+hr
+	width 300px
+	margin 0 auto
+	border  1px solid rgba(85, 10, 0,.4)
+		
+header h1
+	margin 0
+	margin-bottom .5%
+	
+.contenedorImgPersonal:hover 
+
+	animation-name animImgPerfil
+	animation-duration: .75s;
+	animation-timing-function: linear;
+	animation-iteration-count: 1;
+
+
+.contenedorImgPersonal
+	width 170px
+	height 170px
+	margin 0 auto
+	margin-top 14%
+	margin-bottom 1%
+	border: 2px solid rgb(85, 10, 0)
+	border-radius: 50%;
+	box-shadow 0px 0px 30px rgb(85, 10, 0)
+	background-image url("../img/imgper.jpg")
+	
+.lema
+	width: 90%;
+	margin: 0 auto;
+	p
+		width 40%
+		margin 0 auto
+		margin-top 1%
+		text-align center
+		font-size .9em
+	
+.lobby
+	z-index: 1;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: rgba(67, 47, 117,.1);
+	
+.fondoLobby
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background-image url("../img/fondo2.jpg")
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+	
+.imgh
+	width 100px
+	height 100px
+	position relative
+	float left
+	background-image url("../img/circulo.png")
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	margin 10px
+	border-radius: 50%;
+	box-shadow 0px 0px 30px rgba(85, 10, 0,.4)
+
+.imgh:hover
+	animation-name amination
+	animation-duration: 3s;
+	animation-timing-function: linear;
+	animation-iteration-count infinite 
+	
+	
+.habilities
+	width 360px
+	height 120px
+	margin 0 auto
+	margin-top 2%
+	
