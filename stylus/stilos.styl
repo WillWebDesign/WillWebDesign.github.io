@@ -2,6 +2,30 @@
 
 vendor-perfixes = o ms moz webkit official
 
+
+
+@keyframes animaScrollFle
+	10%
+		transform:translateY(3px) rotate(2deg)
+	20%
+		transform:translateY(-3px) rotate(-2deg)
+	30%
+		transform:translateY(3px) rotate(2deg)
+	40%
+		transform:translateY(-3px) rotate(-2deg)
+	50%
+		transform:translateY(2px) rotate(1deg)
+	60%
+		transform:translateY(-2px) rotate(-1deg)
+	70%
+		transform:translateY(2px) rotate(1deg)
+	80%
+		transform:translateY(-2px) rotate(-1deg)
+	90%
+		transform:translateY(1px) rotate(0)
+	100%
+		transform:translateY(-1px) rotate(0)
+
 @keyframes animImgPerfil
 	10%
 		transform:translateX(3px) rotate(2deg)
@@ -29,6 +53,82 @@ vendor-perfixes = o ms moz webkit official
 		transform rotate(0deg)
 	100%
 		transform rotate(360deg)
+	
+@keyframes imaEstre
+	0%
+		opacity 0
+	50%
+		opacity 1
+	100%
+		opacity 0
+
+@keyframes poro1
+	0%
+		top -66% 
+		left 10%
+	25%
+		top -20% 
+		left 101%
+	50%
+		top -20% 
+		left -1%
+	75%
+		top -55% 
+		left 40%
+	100%
+		top -66% 
+		left 10%
+		
+@keyframes poro2
+	0%
+		top -66% 
+		left 101%
+	25%
+		top -60% 
+		left 5%
+	50%
+		top -30% 
+		left 50%
+	75%
+		top -25% 
+		left 40%
+	100%
+		top -66% 
+		left 101%
+
+@keyframes poro3
+	0%
+		top -66% 
+		left 50%
+	25%
+		top -30% 
+		left -1%
+	50%
+		top -40% 
+		left 101%
+	75%
+		top -25% 
+		left 40%
+	100%
+		top -66% 
+		left 50%
+		
+@keyframes poro4
+	0%
+		top -30% 
+		left 50%
+	25%
+		top -66% 
+		left 90%
+	50%
+		top -40% 
+		left 60%
+	75%
+		top -30% 
+		left 100%
+	100%
+		top -30% 
+		left 50%
 
 body, html
 	margin 0
@@ -41,7 +141,7 @@ header
 	z-index 2
 	margin-left 15%
 	margin-rinht 15%
-	margin-top 7%
+	margin-top 5%
 	width 70%
 	display inline-block
 	text-align center
@@ -66,7 +166,7 @@ header h1
 	width 170px
 	height 170px
 	margin 0 auto
-	margin-top 14%
+	margin-top 10%
 	margin-bottom 1%
 	border: 2px solid rgb(85, 10, 0)
 	border-radius: 50%;
@@ -101,28 +201,111 @@ header h1
 	background-attachment: fixed;
 	
 .imgh
-	width 100px
+	width 107px
 	height 100px
 	position relative
 	float left
-	background-image url("../img/circulo.png")
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
 	margin 10px
 	border-radius: 50%;
 	box-shadow 0px 0px 30px rgba(85, 10, 0,.4)
+	img
+		width 100%
+		height 100%
+		&:hover 
+			animation-name amination
+			animation-duration: 3s;
+			animation-timing-function: linear;
+			animation-iteration-count infinite 
+	h5
+		margin: 0;
+		text-align: center;
+		box-shadow: 0 35px 50px rgba(85,10,0,1)
+		
+.imgAnalis
+	background-image url("../img/habiAnalisis.png")
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;	
 
-.imgh:hover
-	animation-name amination
-	animation-duration: 3s;
-	animation-timing-function: linear;
-	animation-iteration-count infinite 
-	
-	
+.imgCode
+	background-image url("../img/habiCode.png")
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;	
+
+.imgCrear
+	background-image url("../img/habiCrea.png")
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;	
+
+.scrollBoton
+	margin-top 56px
+	text-align center
+	h5
+		margin 0 auto
+		&:hover
+			animation-name animaScrollFle
+			animation-duration: 2s;
+			animation-timing-function: linear;
+			animation-iteration-count: 1;
+
+	h6
+		margin: 0;
+		margin-top: 20px;
+	&:hover
+		cursor pointer
 .habilities
-	width 360px
+	width 381px
 	height 120px
 	margin 0 auto
-	margin-top 2%
+	margin-top 1%
 	
+.estrella
+	width 100px
+	height 100px
+	background-image url("../img/estrella.png")
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;	
+	animation-name imaEstre
+	animation-duration: 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	position relative
+
+.poritos
+	width 10px
+	height 10px
+	top -66% 
+	left 10%
+	background-image url("../img/poritos.png")
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	position relative
+	opacity .5
+
+.p1
+	animation-name poro1
+	animation-duration: 50s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	
+.p2
+	animation-name poro2
+	animation-duration: 50s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+
+.p3
+	animation-name poro3
+	animation-duration: 50s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	
+.p4
+	animation-name poro4
+	animation-duration: 50s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
