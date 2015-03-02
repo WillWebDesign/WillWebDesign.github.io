@@ -168,6 +168,13 @@ header h1
 	margin 0
 	margin-bottom .5%
 
+.prueba
+	position relative
+	width 2000px
+	height 100%
+	background green
+	float left
+
 .contenedor
 	
 	height 100%
@@ -176,12 +183,14 @@ header h1
 	position: absolute;
 	width: 100%;
 	height: 100%;
+	overflow-x: scroll;
+	overflow-y: hidden;
 	
 .contenedorHijo
 	position relative
 	width 100%
 	height 100%
-	background: rgba(67, 47, 117,.1);
+	background: rgba(67, 47, 117,.2);
 	
 .contenedorImgPersonal:hover 
 
@@ -437,27 +446,37 @@ header h1
 	animation-duration: 50s;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
+
+.scrollx
+	
+	width 3000px
+	height 100%
+	
+.contenido::-webkit-scrollbar
+{
+	height: 5px;
+}
 	
 ::-webkit-scrollbar
 {
-	width: 0px;
-	//background-color: #F5F5F5;
+	width: 5px;
+	background-color: #F5F5F5;
 }
-/*
+
 ::-webkit-scrollbar-track
 {
 	box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 	border-radius: 10px;
-	background-color: #F5F5F5;
+	background-color: none;
 }
 
 ::-webkit-scrollbar-thumb
 {
 	border-radius: 10px;
 	box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-	background-color: #D62929;
+	background-color: grey;
 }
-*/
+
 .menu
 	position relative
 	float left
@@ -466,6 +485,15 @@ header h1
 	background black
 	hr
 		width 70%
+
+.volverArriba
+	position: fixed;
+	right 0
+	float: right;
+	bottom: 0;
+	display none
+	&:hover
+		cursor pointer
 	
 .imgHome
 	
