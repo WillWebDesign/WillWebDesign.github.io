@@ -8,7 +8,7 @@ $(function(){
 
 		$(window).scroll(function() {
 	  		var scrolltop =$(this).scrollTop();
-	  		var scrollL=$('.contenido').scrollLeft();
+	  		//var scrollL=$('.contenido').scrollLeft();
 	  		
 	  		if(scrolltop > 10 && iteracion==0){
 	  			$('body,html').animate({scrollTop: $(".contenido").offset().top},"slow");
@@ -23,6 +23,9 @@ $(function(){
 		  		iteracion=0;
 		  		$('.volverArriba').css("display","none");
   			}
+  			/*if(scrollL < 4 && iteracion==1){
+	  			$('body,html').animate({scrollTop: $("body").offset().top},"slow");
+  			}*/
   			
   		})
 	});
