@@ -5,6 +5,11 @@ $(function()
 	  	$('body,html').animate({scrollTop: $(".contenedor").offset().top},"slow");
   				
 	 });
+	$('.scrollBoton').click(function(){
+	  			
+	  	$('body,html').animate({scrollTop: $(".contenido").offset().top},"slow");
+  				
+	 });
 		$(".contenido").mousewheel(function(event, delta) {	
 			this.scrollLeft -= (delta * 100);
 			event.preventDefault();
