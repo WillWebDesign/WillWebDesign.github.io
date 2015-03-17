@@ -11,7 +11,7 @@ $(function()
   				
 	 });
 		$(".contenido").mousewheel(function(event, delta) {	
-			this.scrollLeft -= (delta * 100);
+			this.scrollLeft -= (delta * 50);
 			event.preventDefault();
 			if(delta > 0 && this.scrollLeft < 1 )
 			{
