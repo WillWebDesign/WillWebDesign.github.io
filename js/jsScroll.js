@@ -26,39 +26,40 @@ $(function()
   			}
   		})
     function grafico (){
-        var gameStats = [
+      var roleStats = [
           {
-            value: 20,
-            color:"#F7464A",
-            highlight: "#FF5A5E",
-            label: "5 v 5 Normal"
+              value: 65,
+              color:"#F7464A",
+              highlight: "#FF5A5E",
+              label: "HTML5"
           },
           {
-            value: 20,
-            color: "#46BFBD",
-            highlight: "#5AD3D1",
-            label: "3 v 3 Normal"
+              value: 60,
+              color: "#46BFBD",
+              highlight: "#5AD3D1",
+              label: "CSS3"
           },
           {
-            value: 20,
-            color: "#FDB45C",
-            highlight: "#FFC870",
-            label: "3 v 3 Ranked"
+              value: 55,
+              color: "#FDB45C",
+              highlight: "#FFC870",
+              label: "PHP"
           },
           {
-            value: 20,
-            color: "#949FB1",
-            highlight: "#A8B3C5",
-            label: "5 v 5 Ranked"
+              value: 40,
+              color: "#949FB1",
+              highlight: "#A8B3C5",
+              label: "Mysql"
           },
           {
-            value: 20,
-            color: "#4D5360",
-            highlight: "#616774",
-            label: "Dominion"
+              value: 75,
+              color: "#4D5360",
+              highlight: "#616774",
+              label: "Javascript"
           }
-        ];
-        var ctx = document.getElementById("canvas").getContext("2d");
-        window.myDoughnut = new Chart(ctx).Doughnut(gameStats, {});
+      ];
+      var ctx = document.getElementById("canvas").getContext("2d");
+      window.myPolarArea = new Chart(ctx).PolarArea(roleStats, {responsive: false});
+
     }
 });
