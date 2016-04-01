@@ -1,0 +1,531 @@
+<html>
+<head>
+	<title>Megaman</title>
+	<style type="text/css">
+		@-webkit-keyframes entrada {
+		  0% {
+		    background-position: -75px 0px;
+		    width:20px;
+			height:110px;
+		  }
+		  4.5% {
+		    background-position: -95px 0px;
+		    width:25px;
+			height:110px;
+		  }
+		  9% {
+		    background-position: -120px 0px;
+		    width:43px;
+			height:110px;
+		  }
+		  13.5% {
+		    background-position: -167px 0px;
+		    width:63px;
+			height:110px;
+		  }
+		  18% {
+		    background-position: -232px 0px;
+		    width:73px;
+			height:110px;
+		  }
+		  22.5% {
+		    background-position: -305px 0px;
+		    width:71px;
+			height:110px;
+		  }
+		  27% {
+		    background-position: -376px 0px;
+		    width:74px;
+			height:110px;
+		  }
+		  31.5% {
+		   background-position: -450px 0px;
+		   width:61px;
+		   height:110px;
+		  }
+		  36% {
+		   background-position: -79px -110px;
+		   width:43px;
+		   height:62px;
+		   margin-top: 48px;
+		  }
+		  40.5% {
+		   background-position: -129px -110px;
+		   width:35px;
+		   height:62px;
+		   margin-top: 48px;
+		  }
+		  45% {
+		   background-position: -172px -110px;
+		   width:34px;
+		   height:62px;
+		   margin-top: 48px;
+		  }
+		  49.5% {
+		   background-position: -216px -110px;
+		   width:33px;
+		   height:62px;
+		   margin-top: 48px;
+		  }
+		  54% {
+		   background-position: -256px -110px;
+		   width:24px;
+		   height:62px;
+		   margin-top: 48px;
+		  }
+		  58.5% {
+		   background-position: -287px -110px;
+		   width:20px;
+		   height:62px;
+		   margin-top: 48px;
+		  }
+		  63% {
+		   background-position: -308px -110px;
+		   width:84px;
+		   height:62px;
+		   margin-top: 48px;
+		  }
+		  67.5% {
+		   background-position: -393px -110px;
+		   width:52px;
+		   height:62px;
+		   margin-top: 48px;
+		  }
+		  72% {
+		   background-position: -445px -110px;
+		   width:66px;
+		   height:62px;
+		   margin-top: 48px;
+		  }
+		  76.5% {
+		   background-position: -189px -172px;
+		   width:36px;
+		   height:50px;
+		   margin-top: 60px;
+		  }
+		  81% {
+		   background-position: -230px -172px;
+		   width:36px;
+		   height:50px;
+		   margin-top: 60px;
+		  }
+		  85.5% {
+		   background-position: -274px -172px;
+		   width:36px;
+		   height:50px;
+		   margin-top: 60px;
+		  }
+		  90% {
+		   background-position: -317px -172px;
+		   width:36px;
+		   height:50px;
+		   margin-top: 60px;
+		  }
+		  94.5% {
+		   background-position: -359px -172px;
+		   width:35px;
+		   height:50px;
+		   margin-top: 60px;
+		  }
+		  100% {
+		   background-position: -400px -172px;
+		   width:61px;
+		   height:50px;
+		   margin-top: 60px;
+		  }
+		}
+		@-webkit-keyframes disparo {
+		  0% {
+		    background-position: -97px -228px;
+		    width:25px;
+			height:58px;
+		    margin-top: 52px;
+		  }
+		  3.7% {
+		    background-position: -131px -228px;
+		    width:25px;
+			height:58px;
+		    margin-top: 52px;
+		  }
+		  7.4% {
+		    background-position: -163px -228px;
+		    width:22px;
+			height:58px;
+		    margin-top: 52px;
+		  }
+		  11.1% {
+		    background-position: -203px -228px;
+		    width:23px;
+			height:58px;
+		    margin-top: 52px;
+		  }
+		  14.8% {
+		    background-position: -236px -228px;
+		    width:27px;
+			height:58px;
+		    margin-top: 52px;
+		  }
+		  18.5% {
+		    background-position: -271px -228px;
+		    width:35px;
+			height:58px;
+		    margin-top: 52px;
+		  }
+		  22.2% {
+		    background-position: -312px -228px;
+		    width:32px;
+			height:58px;
+		  	margin-top: 52px;
+		  }
+		  25.9% {
+		   background-position: -353px -228px;
+		   width:27px;
+		   height:58px;
+		   margin-top: 52px;
+		  }
+		  29.6% {
+		   background-position: -390px -228px;
+		   width:32px;
+		   height:58px;
+		   margin-top: 52px;
+		  }
+		  33.3% {
+		   background-position: -429px -228px;
+		   width:29px;
+		   height:58px;
+		   margin-top: 52px;
+		  }
+		  37% {
+		   background-position: -463px -228px;
+		   width:32px;
+		   height:58px;
+		   margin-top: 52px;
+		  }
+		  40.7% {
+		   background-position: -85px -286px;
+		   width:49px;
+		   height:57px;
+		   margin-top: 53px;
+		  }
+		  44.4% {
+		   background-position: -143px -286px;
+		   width:47px;
+		   height:57px;
+		   margin-top: 53px;
+		  }
+		  48.1% {
+		   background-position: -197px -286px;
+		   width:50px;
+		   height:57px;
+		   margin-top: 53px;
+		  }
+		  51.8% {
+		   background-position: -255px -286px;
+		   width:50px;
+		   height:57px;
+		   margin-top: 53px;
+		  }
+		  55.5% {
+		   background-position: -315px -286px;
+		   width:52px;
+		   height:57px;
+		   margin-top: 53px;
+		  }
+		  59.2% {
+		   background-position: -373px -286px;
+		   width:42px;
+		   height:57px;
+		   margin-top: 53px;
+		  }
+		  62.9% {
+		   background-position: -420px -286px;
+		   width:40px;
+		   height:57px;
+		   margin-top: 53px;
+		  }
+		  66.6% {
+		   background-position: -464px -286px;
+		   width:35px;
+		   height:57px;
+		   margin-top: 53px;
+		  }
+		  70.3% {
+		   background-position: -93px -345px;
+		   width:43px;
+		   height:70px;
+		   margin-top: 35px;
+		   padding-bottom: 7px;
+		  }
+		  74% {
+		   background-position: -147px -345px;
+		   width:48px;
+		   height:70px;
+		   margin-top: 35px;
+		   padding-bottom: 7px;
+		  }
+		  77.7% {
+		   background-position: -201px -345px;
+		   width:50px;
+		   height:70px;
+		   margin-top: 35px;
+		   padding-bottom: 7px;
+		  }
+		  81.4% {
+		   background-position: -257px -345px;
+		   width:58px;
+		   height:70px;
+		   margin-top: 35px;
+		   padding-bottom: 7px;
+		  }
+		  85.1% {
+		   background-position: -322px -345px;
+		   width:41px;
+		   height:70px;
+		   margin-top: 35px;
+		   padding-bottom: 7px;
+		  }
+		  88.8% {
+		   background-position: -366px -345px;
+		   width:42px;
+		   height:70px;
+		   margin-top: 35px;
+		   padding-bottom: 7px;
+		  }
+		  92.5% {
+		   background-position: -415px -345px;
+		   width:37px;
+		   height:70px;
+		   margin-top: 35px;
+		   padding-bottom: 7px;
+		  }
+		  96.2% {
+		   background-position: -457px -345px;
+		   width:33px;
+		   height:70px;
+		   margin-top: 35px;
+		   padding-bottom: 7px;
+		  }
+		  100% {
+		   background-position: -490px -345px;
+		   width:61px;
+		   height:70px;
+		   margin-top: 35px;
+		   padding-bottom: 7px;
+		  }
+		}
+		@-webkit-keyframes correr {
+		  0% {
+		    background-position: -114px -427px;
+		    width:33px;
+			height:47px;
+		    margin-top: 63px;
+		  }
+		  4.2% {
+		    background-position: -152px -427px;
+		    width:32px;
+			height:47px;
+		    margin-top: 63px;
+		  }
+		  8.4% {
+		    background-position: -190px -427px;
+		    width:32px;
+			height:47px;
+		    margin-top: 63px;
+		  }
+		  12.6% {
+		    background-position: -230px -427px;
+		    width:40px;
+			height:47px;
+		    margin-top: 63px;
+		  }
+		  16.8% {
+		    background-position: -274px -427px;
+		    width:49px;
+			height:47px;
+		    margin-top: 63px;
+		  }
+		  21% {
+		    background-position: -328px -427px;
+		    width:48px;
+			height:47px;
+		    margin-top: 63px;
+		  }
+		  25.2% {
+		    background-position: -383px -427px;
+		    width:40px;
+			height:47px;
+		    margin-top: 63px;
+		  }
+		  29.4% {
+		   background-position: -432px -427px;
+		   width:30px;
+		   height:47px;
+		    margin-top: 63px;
+		  }
+		  33.6% {
+		   background-position: -119px -483px;
+		   width:27px;
+		   height:48px;
+		    margin-top: 62px;
+		  }
+		  37.8% {
+		   background-position: -154px -483px;
+		   width:36px;
+		   height:48px;
+		    margin-top: 62px;
+		  }
+		  42% {
+		   background-position: -195px -483px;
+		   width:41px;
+		   height:48px;
+		    margin-top: 62px;
+		  }
+		  46.2% {
+		   background-position: -239px -483px;
+		   width:43px;
+		   height:48px;
+		    margin-top: 62px;
+		  }
+		  50.4% {
+		   background-position: -290px -483px;
+		   width:43px;
+		   height:48px;
+		    margin-top: 62px;
+		  }
+		  54.6% {
+		   background-position: -339px -483px;
+		   width:40px;
+		   height:48px;
+		    margin-top: 62px;
+		  }
+		  58.8% {
+		   background-position: -387px -483px;
+		   width:32px;
+		   height:48px;
+		    margin-top: 62px;
+		  }
+		  63% {
+		   background-position: -426px -483px;
+		   width:28px;
+		   height:48px;
+		    margin-top: 62px;
+		  }
+		  67.2% {
+		   background-position: -95px -539px;
+		   width:35px;
+		   height:45px;
+		   margin-top: 65px;
+		  }
+		  71.4% {
+		   background-position: -136px -539px;
+		   width:46px;
+		   height:45px;
+		   margin-top: 65px;
+		  }
+		  75.6% {
+		   background-position: -188px -539px;
+		   width:52px;
+		   height:45px;
+		   margin-top: 65px;
+		  }
+		  79.8% {
+		   background-position: -245px -539px;
+		   width:58px;
+		   height:45px;
+		   margin-top: 65px;
+		  }
+		  84% {
+		   background-position: -309px -539px;
+		   width:38px;
+		   height:45px;
+		   margin-top: 65px;
+		  }
+		  88.2% {
+		   background-position: -353px -539px;
+		   width:30px;
+		   height:45px;
+		   margin-top: 65px;
+		  }
+		  92.4% {
+		   background-position: -389px -539px;
+		   width:42px;
+		   height:45px;
+		   margin-top: 65px;
+		  }
+		  96.6% {
+		   background-position: -431px -539px;
+		   width:37px;
+		   height:45px;
+		   margin-top: 65px;
+		  }
+		  100% {
+		   background-position: -461px -539px;
+		   width:42px;
+		   height:45px;
+		   margin-top: 65px;
+		  }	 
+		}
+		@-webkit-keyframes lala {
+			  0% {
+			    background-position: -114px -427px;
+			    width:33px;
+				height:47px;
+			    margin-top: 63px;
+			  }
+			  100% {
+			    background-position: -190px -427px;
+			    width:32px;
+				height:47px;
+			    margin-top: 63px;
+			  }
+			}
+		#contenedor{
+			width: 300px;
+			height: 300px;
+			position: relative;
+			margin: 0 auto;
+		}
+		#megaman{
+			width:40px;
+			height:48px;
+			position:relative;
+			margin: 0 auto;
+		    background-image: url('x4sheet1.gif');
+		    background-repeat: no-repeat;	
+		    -ms-animation: entrada 1s steps(1, end) infinite;
+			-webkit-animation: entrada 1s steps(1, end) infinite;
+			-moz-animation: entrada 1s steps(1, end) infinite;
+			-o-animation: entrada 1s steps(1, end) infinite;
+			animation: entrada 1s steps(1, end) infinite;	    
+		    background-position: 0;
+		    bottom: 0;
+		}
+	
+	</style>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+	$(function (){
+		$("#megaman").css("animation","lala 2s steps(1, end) infinite");
+		$("body").keypress(function( event ) {
+		  if ( event.which == 115 ) {
+		     event.preventDefault();
+		     $("#megaman").css("animation","entrada 2s steps(1, end) infinite");
+		  }
+		  if ( event.which == 99 ) {
+		     event.preventDefault();
+		     $("#megaman").css("animation","correr 2s steps(1, end) infinite");
+		  }
+		  if ( event.which == 100 ) {
+		     event.preventDefault();
+		     $("#megaman").css("animation","disparo 1.6s steps(1, end) infinite");
+		  }
+		});
+	});
+	</script>
+</head>
+<body>
+	<div id="contenedor">
+		<div id="megaman"></div>
+	</div>
+</body>
+</html>
